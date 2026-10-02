@@ -22,8 +22,8 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
 /* ضع هنا Project URL و Publishable key من Supabase فقط. لا تضع service_role أو secret key. */
-const SUPABASE_URL=const SUPABASE_URL;
-const SUPABASE_PUBLISHABLE_KEY=sb_publishable_rueltha0_CAHmN_hpJJp4g_XOCWsbBg;
+const SUPABASE_URL="https://hsyikgfcoqzksvbzhvkf.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY=sb_publishable_rueltha0_CAHmN_hpJJp4g_XOCWsbBg";
 let db=null;
 if(SUPABASE_URL.startsWith("http")&&!SUPABASE_PUBLISHABLE_KEY.startsWith("YOUR_"))db=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
