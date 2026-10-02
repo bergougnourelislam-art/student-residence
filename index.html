@@ -1,146 +1,37 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>منظمة طلبة الإقامة | لخضاري محمد الأخضر</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
-*{box-sizing:border-box}body{margin:0;font-family:Cairo,Arial,sans-serif;background:#f5f8f7;color:#12302b}
-:root{--dark:#063b35;--green:#159447;--light:#e8f5ee;--text:#12302b;--muted:#6b7d78;--white:#fff;--border:#dce8e3}
-.nav{position:sticky;top:0;z-index:10;background:var(--dark);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:13px 5%;box-shadow:0 3px 15px #0002}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800}.logo{width:42px;height:42px;border-radius:50%;background:#fff;color:var(--dark);display:grid;place-items:center;font-size:20px}
-.navlinks{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.navlinks button{border:0;background:transparent;color:#fff;padding:9px 12px;border-radius:8px;font-family:inherit;cursor:pointer}.navlinks button:hover{background:#ffffff18}.join{background:#159447!important}
-.container{max-width:1200px;margin:auto;padding:28px 5%}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:35px;align-items:center;padding:45px 0}.hero h1{font-size:44px;line-height:1.35;margin:0}.hero h1 span{color:var(--green)}.hero p{font-size:17px;color:var(--muted);line-height:2}.heroimg{height:390px;border-radius:28px;background:linear-gradient(135deg,#d9eee4,#fff);display:grid;place-items:center;border:1px solid var(--border);font-size:80px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.btn{border:0;border-radius:10px;padding:12px 22px;font-family:inherit;font-weight:700;cursor:pointer;background:var(--dark);color:#fff}.btn.green{background:var(--green)}.btn.outline{background:#fff;color:var(--dark);border:1px solid var(--dark)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.stat,.card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:0 5px 18px #12302b09}.stat b{display:block;font-size:29px;margin-top:6px}.muted{color:var(--muted)}
-.section-title{display:flex;justify-content:space-between;align-items:center;margin:38px 0 18px}.section-title h2{margin:0}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.news{min-height:160px}.news h3{font-size:17px}.page{display:none}.page.active{display:block}
-.formbox{max-width:900px;margin:15px auto;background:#fff;border:1px solid var(--border);border-radius:20px;padding:28px;box-shadow:0 7px 22px #12302b0b}.formgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}label{font-weight:700;font-size:14px;display:block;margin-bottom:7px}input,select,textarea{width:100%;padding:12px;border:1px solid #cfded8;border-radius:9px;font-family:inherit;background:#fff}textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}.check{display:flex;gap:8px;align-items:flex-start;margin:18px 0;font-size:13px}.check input{width:auto;margin-top:5px}.notice{padding:15px;border-radius:10px;background:var(--light);margin-bottom:20px}
-.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.cat{padding:18px;background:#fff;border:2px solid var(--border);border-radius:14px;text-align:center;cursor:pointer}.cat:hover,.cat.selected{border-color:var(--green);background:var(--light)}
-.dashboard{display:grid;grid-template-columns:220px 1fr;min-height:650px;background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden}.side{background:var(--dark);color:#fff;padding:20px}.side button{display:block;width:100%;text-align:right;background:transparent;border:0;color:#fff;padding:13px;border-radius:8px;font-family:inherit;cursor:pointer}.side button:hover{background:#ffffff18}.dashmain{padding:25px}.dashstats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.dashstat{padding:18px;border-radius:12px;background:#f6f9f8}.table{width:100%;border-collapse:collapse;margin-top:18px}.table th,.table td{padding:12px;border-bottom:1px solid var(--border);text-align:right;font-size:13px}.badge{padding:4px 9px;border-radius:20px;background:#fff2d8;color:#9b6500;font-size:11px}.ok{background:#dff5e8;color:#14713b}.new{background:#e5f0ff;color:#2864a3}
-.footer{margin-top:60px;padding:28px 5%;background:var(--dark);color:#fff;text-align:center}
-.toast{position:fixed;bottom:20px;left:20px;background:var(--dark);color:#fff;padding:13px 18px;border-radius:10px;display:none;z-index:30}
-@media(max-width:850px){.hero{grid-template-columns:1fr}.heroimg{height:250px}.stats,.grid4,.categories,.dashstats{grid-template-columns:repeat(2,1fr)}.dashboard{grid-template-columns:1fr}.side{display:none}.formgrid{grid-template-columns:1fr}}
-@media(max-width:500px){.stats,.grid4,.categories,.dashstats{grid-template-columns:1fr}.hero h1{font-size:32px}.nav{align-items:flex-start;gap:8px}.navlinks{justify-content:flex-end}.navlinks button{padding:6px;font-size:12px}}
-</style>
-</head>
+*{box-sizing:border-box}body{margin:0;font-family:Cairo,Arial,sans-serif;background:#f5f8f7;color:#12302b}:root{--dark:#063b35;--green:#159447;--light:#e8f5ee;--muted:#6b7d78;--border:#dce8e3;--danger:#b42318}.nav{position:sticky;top:0;z-index:20;background:var(--dark);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:13px 5%;box-shadow:0 3px 15px #0002}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.logo{width:42px;height:42px;border-radius:50%;background:#fff;color:var(--dark);display:grid;place-items:center;font-size:20px}.navlinks{display:flex;gap:6px;flex-wrap:wrap}.navlinks button{border:0;background:transparent;color:#fff;padding:9px 11px;border-radius:8px;font-family:inherit;cursor:pointer}.navlinks button:hover{background:#ffffff18}.join{background:var(--green)!important}.adminbtn{border:1px solid #fff6!important}.container{max-width:1200px;margin:auto;padding:28px 5%}.hero{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;padding:45px 0}.hero h1{font-size:44px;line-height:1.35;margin:0}.hero h1 span{color:var(--green)}.hero p{font-size:17px;color:var(--muted);line-height:2}.heroimg{height:350px;border-radius:28px;background:linear-gradient(135deg,#d9eee4,#fff);display:grid;place-items:center;border:1px solid var(--border);font-size:80px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.btn{border:0;border-radius:10px;padding:12px 22px;font-family:inherit;font-weight:700;cursor:pointer;background:var(--dark);color:#fff}.btn.green{background:var(--green)}.btn.outline{background:#fff;color:var(--dark);border:1px solid var(--dark)}.btn.danger{background:var(--danger)}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.stat,.card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:0 5px 18px #12302b09}.stat b{display:block;font-size:29px;margin-top:6px}.muted{color:var(--muted)}.section-title{display:flex;justify-content:space-between;align-items:center;margin:38px 0 18px}.page{display:none}.page.active{display:block}.formbox{max-width:900px;margin:15px auto;background:#fff;border:1px solid var(--border);border-radius:20px;padding:28px;box-shadow:0 7px 22px #12302b0b}.formgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}label{font-weight:700;font-size:14px;display:block;margin-bottom:7px}input,select,textarea{width:100%;padding:12px;border:1px solid #cfded8;border-radius:9px;font-family:inherit;background:#fff}textarea{min-height:120px}.full{grid-column:1/-1}.check{display:flex;gap:8px;align-items:flex-start;margin:18px 0;font-size:13px}.check input{width:auto}.notice{padding:15px;border-radius:10px;background:var(--light);margin-bottom:20px}.error{display:none;padding:12px;border-radius:9px;background:#ffe9e7;color:#8c1d18;margin-bottom:15px}.success{display:none;padding:12px;border-radius:9px;background:#e3f7ea;color:#116b37;margin-bottom:15px}.adminWrap{display:grid;grid-template-columns:220px 1fr;min-height:560px;background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden}.side{background:var(--dark);color:#fff;padding:20px}.side button{display:block;width:100%;text-align:right;background:transparent;border:0;color:#fff;padding:13px;border-radius:8px;font-family:inherit;cursor:pointer}.side button:hover{background:#ffffff18}.adminMain{padding:25px}.dashstats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.dashstat{padding:18px;border-radius:12px;background:#f6f9f8}.footer{margin-top:60px;padding:28px 5%;background:var(--dark);color:#fff;text-align:center}.toast{position:fixed;bottom:20px;left:20px;background:var(--dark);color:#fff;padding:13px 18px;border-radius:10px;display:none;z-index:30}@media(max-width:850px){.hero{grid-template-columns:1fr}.stats,.dashstats{grid-template-columns:repeat(2,1fr)}.adminWrap{grid-template-columns:1fr}.side{display:none}.formgrid{grid-template-columns:1fr}}@media(max-width:500px){.stats,.dashstats{grid-template-columns:1fr}.hero h1{font-size:32px}.nav{align-items:flex-start;gap:8px}.navlinks button{padding:6px;font-size:12px}}
+</style></head>
 <body>
-<nav class="nav">
-  <div class="brand"><div class="logo">ط</div><div>منظمة طلبة الإقامة<br><small>لخضاري محمد الأخضر</small></div></div>
-  <div class="navlinks">
-    <button onclick="showPage('home')">الرئيسية</button>
-    <button onclick="showPage('about')">عن المنظمة</button>
-    <button onclick="showPage('complaint')">أبلغ عن مشكلة</button>
-    <button onclick="showPage('polls')">الاستطلاعات</button>
-    <button onclick="showPage('news')">الأخبار</button>
-    <button class="join" onclick="showPage('join')">انخرط معنا</button>
-    <button onclick="showPage('admin')">لوحة الإدارة</button>
-  </div>
-</nav>
-
+<nav class="nav"><div class="brand"><div class="logo">ط</div><div>منظمة طلبة الإقامة<br><small>لخضاري محمد الأخضر</small></div></div><div class="navlinks"><button onclick="showPage('home')">الرئيسية</button><button onclick="showPage('about')">عن المنظمة</button><button onclick="showPage('join')" class="join">انخرط معنا</button><button onclick="showPage('complaint')">أبلغ عن مشكلة</button><button onclick="showPage('polls')">الاستطلاعات</button><button onclick="showPage('news')">الأخبار</button><button onclick="showPage('login')" class="adminbtn">دخول الإدارة</button></div></nav>
 <main class="container">
-<section id="home" class="page active">
-  <div class="hero">
-    <div>
-      <div class="muted">منصة طلابية رقمية</div>
-      <h1>صوت الطالب...<br><span>مسؤوليتنا</span></h1>
-      <p>منصة لخدمة طلبة الإقامة الجامعية لخضاري محمد الأخضر، استقبال الانشغالات، تنظيم الانخراط، ونشر الأخبار والنتائج بكل وضوح.</p>
-      <div class="actions"><button class="btn green" onclick="showPage('join')">👥 انخرط معنا</button><button class="btn" onclick="showPage('complaint')">📢 أبلغ عن مشكلة</button></div>
-    </div>
-    <div class="heroimg">🏛️</div>
-  </div>
-  <div class="stats">
-    <div class="stat">👥 عدد الأعضاء<b>0</b><span class="muted">طالب</span></div>
-    <div class="stat">📄 إجمالي الشكاوى<b>0</b><span class="muted">شكوى</span></div>
-    <div class="stat">⏳ قيد المعالجة<b>0</b><span class="muted">شكوى</span></div>
-    <div class="stat">✓ تم حلها<b>0</b><span class="muted">شكوى</span></div>
-  </div>
-  <div class="section-title"><h2>آخر الأخبار</h2><button class="btn outline" onclick="showPage('news')">عرض الكل</button></div>
-  <div class="grid4"><div class="card news"><h3>لا توجد أخبار حاليًا</h3><p class="muted">سيتم ظهور الأخبار هنا بعد أن تضيفها المنظمة.</p></div></div></div>
-</section>
-
-<section id="about" class="page">
-  <div class="section-title"><h2>عن المنظمة</h2></div>
-  <div class="card"><h3>من نحن؟</h3><p class="muted" style="line-height:2">منظمة طلابية تهدف إلى تمثيل الطلبة، استقبال انشغالاتهم، المساهمة في تحسين ظروف الإقامة، وتنظيم المبادرات والأنشطة الطلابية. هذه الصفحة يمكن تخصيصها لاحقًا بالاسم الرسمي للمنظمة، القانون الأساسي، أعضاء المكتب، ووسائل التواصل.</p></div>
-</section>
-
-<section id="join" class="page">
-  <div class="section-title"><h2>انخرط معنا</h2></div>
-  <div class="formbox">
-    <div class="notice">انضم إلى العمل الطلابي وساهم في الدفاع عن حقوق الطلبة وتحسين الحياة داخل الإقامة.</div>
-    <form id="joinForm">
-      <div class="formgrid">
-        <div><label>الاسم واللقب *</label><input required placeholder="اكتب اسمك الكامل"></div>
-        <div><label>تاريخ الميلاد</label><input type="date"></div>
-        <div><label>رقم الهاتف *</label><input required placeholder="05 XX XX XX XX"></div>
-        <div><label>البريد الإلكتروني *</label><input type="email" required placeholder="example@email.com"></div>
-        <div><label>المعهد / الكلية *</label><input required placeholder="اسم المعهد"></div>
-        <div><label>التخصص *</label><input required placeholder="التخصص"></div>
-        <div><label>المستوى الدراسي *</label><select required><option value="">اختر المستوى</option><option>أولى ليسانس</option><option>ثانية ليسانس</option><option>ثالثة ليسانس</option><option>ماستر</option><option>دكتوراه</option></select></div>
-        <div><label>رقم الجناح / الغرفة</label><input placeholder="مثال: الجناح 03 - الغرفة 12"></div>
-        <div class="full"><label>لماذا تريد الانضمام إلى المنظمة؟</label><textarea placeholder="اكتب إجابتك..."></textarea></div>
-        <div class="full"><label>مجال المساهمة</label><select><option>الدفاع عن حقوق الطلبة</option><option>الإعلام والاتصال</option><option>التنظيم</option><option>الثقافة</option><option>الرياضة</option><option>العمل التطوعي</option><option>الإعلام الرقمي</option></select></div>
-      </div>
-      <label class="check"><input type="checkbox" required> أوافق على استخدام المعلومات التي قدمتها لأغراض دراسة طلب الانخراط والتواصل معي.</label>
-      <button class="btn green" type="submit">إرسال طلب الانخراط</button>
-    </form>
-  </div>
-</section>
-
-<section id="complaint" class="page">
-  <div class="section-title"><h2>أبلغ عن مشكلة</h2></div>
-  <div class="formbox">
-    <div class="notice">يمكنك إرسال انشغالك مع تحديد المكان وإرفاق التفاصيل. في النسخة المتصلة بقاعدة البيانات سيحصل كل طلب على رقم متابعة.</div>
-    <form id="complaintForm">
-      <label>نوع المشكلة</label>
-      <div class="categories" style="margin:12px 0 20px">
-        <div class="cat" onclick="selectCat(this)">🍽️<br>المطعم</div><div class="cat" onclick="selectCat(this)">💧<br>المياه</div><div class="cat" onclick="selectCat(this)">⚡<br>الكهرباء</div><div class="cat" onclick="selectCat(this)">🧹<br>النظافة</div><div class="cat" onclick="selectCat(this)">🛏️<br>الغرف</div><div class="cat" onclick="selectCat(this)">🚌<br>النقل</div><div class="cat" onclick="selectCat(this)">🛡️<br>الأمن</div><div class="cat" onclick="selectCat(this)">🏢<br>الإدارة</div>
-      </div>
-      <div class="formgrid">
-        <div><label>المكان</label><input placeholder="الجناح / الغرفة / المرفق"></div>
-        <div><label>درجة الاستعجال</label><select><option>عادية</option><option>مهمة</option><option>عاجلة</option></select></div>
-        <div class="full"><label>وصف المشكلة *</label><textarea required placeholder="اشرح المشكلة بالتفصيل..."></textarea></div>
-        <div class="full"><label>صورة أو ملف (اختياري)</label><input type="file"></div>
-      </div>
-      <button class="btn" type="submit">إرسال الشكوى</button>
-    </form>
-  </div>
-</section>
-
-<section id="polls" class="page">
-  <div class="section-title"><h2>استطلاعات الطلبة</h2></div>
-  <div class="card"><h3>ما تقييمك لخدمات المطعم هذا الأسبوع؟</h3><p class="muted">شارك برأيك للمساعدة في عرض صورة واضحة عن رضا الطلبة.</p>
-    <div class="actions"><button class="btn outline" onclick="vote(this)">👍 ممتاز</button><button class="btn outline" onclick="vote(this)">🙂 جيد</button><button class="btn outline" onclick="vote(this)">😐 متوسط</button><button class="btn outline" onclick="vote(this)">👎 ضعيف</button></div>
-  </div>
-  <div class="card" style="margin-top:15px"><h3>هل النقل الجامعي يلبي احتياجاتك؟</h3><div class="actions"><button class="btn outline" onclick="vote(this)">نعم</button><button class="btn outline" onclick="vote(this)">جزئيًا</button><button class="btn outline" onclick="vote(this)">لا</button></div></div>
-</section>
-
-<section id="news" class="page">
-  <div class="section-title"><h2>الأخبار والإعلانات</h2></div>
-  <div class="card news"><h3>لا توجد أخبار حاليًا</h3><p class="muted">سيتم ظهور الأخبار والإعلانات هنا بعد إضافتها من لوحة الإدارة.</p></div>
-</section>
-<section id="admin" class="page">
-  <div class="section-title"><h2>لوحة تحكم المنظمة</h2></div>
-  <div class="dashboard">
-    <aside class="side"><h3>لوحة الإدارة</h3><p class="muted" style="color:#b9d0c9">لا يوجد مسؤول مضاف حاليًا</p><button>🏠 الرئيسية</button><button>📄 الشكاوى <b>(0)</b></button><button>👥 طلبات الانخراط <b>(0)</b></button><button>📰 الأخبار</button><button>📊 الاستطلاعات</button><button>⚙️ الإعدادات</button></aside>
-    <div class="dashmain">
-      <div class="dashstats"><div class="dashstat">👥 الأعضاء<br><b>0</b></div><div class="dashstat">📄 الشكاوى<br><b>0</b></div><div class="dashstat">⏳ قيد المعالجة<br><b>0</b></div><div class="dashstat">✓ تم حلها<br><b>0</b></div></div>
-      <h3>آخر الشكاوى</h3><div class="card"><p class="muted">لا توجد شكاوى حاليًا.</p></div>
-    </div>
-  </div>
-</section>
-</main>
-
-<footer class="footer">منظمة طلبة الإقامة لخضاري محمد الأخضر — منصة لخدمة الطالب وتمثيل انشغالاته</footer>
-<div id="toast" class="toast"></div>
-
+<section id="home" class="page active"><div class="hero"><div><div class="muted">منصة طلابية رقمية</div><h1>صوت الطالب...<br><span>مسؤوليتنا</span></h1><p>منصة لخدمة طلبة الإقامة الجامعية لخضاري محمد الأخضر، استقبال الانشغالات، تنظيم الانخراط، ونشر الأخبار والنتائج.</p><div class="actions"><button class="btn green" onclick="showPage('join')">👥 انخرط معنا</button><button class="btn" onclick="showPage('complaint')">📢 أبلغ عن مشكلة</button></div></div><div class="heroimg">🏛️</div></div><div class="stats"><div class="stat">👥 عدد الأعضاء<b id="publicMembers">0</b><span class="muted">طالب</span></div><div class="stat">📄 إجمالي الشكاوى<b id="publicComplaints">0</b><span class="muted">شكوى</span></div><div class="stat">⏳ قيد المعالجة<b id="publicPending">0</b><span class="muted">شكوى</span></div><div class="stat">✓ تم حلها<b id="publicResolved">0</b><span class="muted">شكوى</span></div></div><div class="section-title"><h2>آخر الأخبار</h2></div><div class="card"><h3>لا توجد أخبار حاليًا</h3><p class="muted">ستظهر الأخبار بعد إضافتها من لوحة الإدارة.</p></div></section>
+<section id="about" class="page"><div class="section-title"><h2>عن المنظمة</h2></div><div class="card"><h3>صفحة المنظمة</h3><p class="muted" style="line-height:2">هذه الصفحة مخصصة لتعريف الطلبة بالمنظمة وأهدافها ونشاطاتها، ويمكنكم تعبئتها لاحقًا.</p></div></section>
+<section id="join" class="page"><div class="section-title"><h2>انخرط معنا</h2></div><div class="formbox"><div class="notice">استمارة الانخراط جاهزة. سنربطها بقاعدة البيانات في المرحلة التالية.</div><form id="joinForm"><div class="formgrid"><div><label>الاسم واللقب *</label><input required></div><div><label>تاريخ الميلاد</label><input type="date"></div><div><label>رقم الهاتف *</label><input required></div><div><label>البريد الإلكتروني *</label><input type="email" required></div><div><label>المعهد / الكلية *</label><input required></div><div><label>التخصص *</label><input required></div><div><label>المستوى الدراسي *</label><select required><option value="">اختر المستوى</option><option>أولى ليسانس</option><option>ثانية ليسانس</option><option>ثالثة ليسانس</option><option>ماستر</option><option>دكتوراه</option></select></div><div><label>الجناح / الغرفة</label><input></div><div class="full"><label>سبب الانضمام</label><textarea></textarea></div></div><label class="check"><input type="checkbox" required> أوافق على استخدام المعلومات لأغراض دراسة طلب الانخراط والتواصل.</label><button class="btn green" type="submit">إرسال طلب الانخراط</button></form></div></section>
+<section id="complaint" class="page"><div class="section-title"><h2>أبلغ عن مشكلة</h2></div><div class="formbox"><div class="notice">سيتم ربط هذا النموذج بقاعدة البيانات في المرحلة التالية.</div><form id="complaintForm"><div class="formgrid"><div><label>نوع المشكلة</label><select><option>المطعم</option><option>المياه</option><option>الكهرباء</option><option>النظافة</option><option>الغرف</option><option>النقل</option><option>الأمن</option><option>الإدارة</option><option>أخرى</option></select></div><div><label>درجة الاستعجال</label><select><option>عادية</option><option>مهمة</option><option>عاجلة</option></select></div><div><label>المكان</label><input></div><div><label>البريد الإلكتروني</label><input type="email"></div><div class="full"><label>وصف المشكلة *</label><textarea required></textarea></div><div class="full"><label>صورة أو ملف</label><input type="file"></div></div><button class="btn" type="submit">إرسال الشكوى</button></form></div></section>
+<section id="polls" class="page"><div class="section-title"><h2>الاستطلاعات</h2></div><div class="card"><h3>لا توجد استطلاعات منشورة حاليًا</h3><p class="muted">ستظهر الاستطلاعات هنا بعد إنشائها من الإدارة.</p></div></section>
+<section id="news" class="page"><div class="section-title"><h2>الأخبار والإعلانات</h2></div><div class="card"><h3>لا توجد أخبار منشورة حاليًا</h3><p class="muted">ستظهر الأخبار والإعلانات هنا بعد إضافتها.</p></div></section>
+<section id="login" class="page"><div class="formbox" style="max-width:520px"><h2>دخول الإدارة</h2><p class="muted">هذا القسم لمسؤولي المنظمة فقط.</p><div id="loginError" class="error"></div><form id="loginForm"><div style="margin-bottom:15px"><label>البريد الإلكتروني</label><input id="loginEmail" type="email" required autocomplete="username"></div><div style="margin-bottom:15px"><label>كلمة المرور</label><input id="loginPassword" type="password" required autocomplete="current-password"></div><button class="btn green" type="submit">تسجيل الدخول</button></form></div></section>
+<section id="admin" class="page"><div class="section-title"><div><h2>لوحة تحكم المنظمة</h2><div class="muted" id="adminEmail"></div></div><button class="btn danger" onclick="logout()">تسجيل الخروج</button></div><div id="adminError" class="error"></div><div class="adminWrap"><aside class="side"><h3>الإدارة</h3><button>🏠 الرئيسية</button><button>📄 الشكاوى <b id="sideComplaints">0</b></button><button>👥 الأعضاء <b id="sideMembers">0</b></button><button>📰 الأخبار</button><button>📊 الاستطلاعات</button><button>👤 المسؤولون</button></aside><div class="adminMain"><div class="notice">الحساب الحالي: <strong id="adminRole">...</strong></div><div class="dashstats"><div class="dashstat">👥 الأعضاء<br><b id="dashMembers">0</b></div><div class="dashstat">📄 الشكاوى<br><b>0</b></div><div class="dashstat">⏳ قيد المعالجة<br><b>0</b></div><div class="dashstat">✓ تم حلها<br><b>0</b></div></div><h3>الحساب الحالي</h3><div class="card"><p>البريد: <strong id="adminEmail2">—</strong></p><p>الصلاحية: <strong id="adminRole2">—</strong></p><p class="muted">سنضيف في المرحلة التالية إدارة المسؤولين الآخرين وصلاحياتهم.</p></div></div></div></section>
+</main><footer class="footer">منظمة طلبة الإقامة لخضاري محمد الأخضر</footer><div id="toast" class="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
+/* ضع هنا Project URL و Publishable key من Supabase فقط. لا تضع service_role أو secret key. */
+const SUPABASE_URL=const SUPABASE_URL;
+const SUPABASE_PUBLISHABLE_KEY=sb_publishable_rueltha0_CAHmN_hpJJp4g_XOCWsbBg;
+let db=null;
+if(SUPABASE_URL.startsWith("http")&&!SUPABASE_PUBLISHABLE_KEY.startsWith("YOUR_"))db=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
 function showPage(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}
-function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.style.display='block';setTimeout(()=>t.style.display='none',3000)}
-document.getElementById('joinForm').addEventListener('submit',e=>{e.preventDefault();toast('✅ تم إرسال طلب الانخراط بنجاح.');e.target.reset()})
-document.getElementById('complaintForm').addEventListener('submit',e=>{e.preventDefault();toast('✅ تم إرسال الشكوى. في النسخة النهائية سيظهر رقم متابعة.');e.target.reset();document.querySelectorAll('.cat').forEach(x=>x.classList.remove('selected'))})
-function selectCat(el){document.querySelectorAll('.cat').forEach(x=>x.classList.remove('selected'));el.classList.add('selected')}
-function vote(btn){toast('✅ تم تسجيل مشاركتك في الاستطلاع.');btn.parentElement.querySelectorAll('button').forEach(b=>b.disabled=true)}
-</script>
-</body>
-</html>
+function toast(m){const t=document.getElementById('toast');t.textContent=m;t.style.display='block';setTimeout(()=>t.style.display='none',3000)}
+document.getElementById('joinForm').onsubmit=e=>{e.preventDefault();toast('سيتم حفظ طلب الانخراط بعد ربط قاعدة البيانات.');e.target.reset()};
+document.getElementById('complaintForm').onsubmit=e=>{e.preventDefault();toast('سيتم حفظ الشكوى بعد ربط قاعدة البيانات.');e.target.reset()};
+document.getElementById('loginForm').onsubmit=async e=>{e.preventDefault();const er=document.getElementById('loginError');er.style.display='none';if(!db){er.textContent='لم يتم وضع Project URL و Publishable key في الملف بعد.';er.style.display='block';return}const email=document.getElementById('loginEmail').value.trim(),password=document.getElementById('loginPassword').value;const r=await db.auth.signInWithPassword({email,password});if(r.error){er.textContent='تعذر تسجيل الدخول: '+r.error.message;er.style.display='block';return}await loadAdmin()};
+async function loadAdmin(){const g=await db.auth.getUser();const user=g.data.user;if(!user){showPage('login');return}const r=await db.from('profiles').select('id,role').eq('id',user.id).single();if(r.error||!r.data||!['admin','super_admin'].includes(r.data.role)){await db.auth.signOut();const er=document.getElementById('loginError');er.textContent='هذا الحساب ليس مسؤولًا معتمدًا.';er.style.display='block';showPage('login');return}const role=r.data.role==='super_admin'?'Super Admin — مسؤول رئيسي':'Admin — مسؤول';document.getElementById('adminEmail').textContent=user.email||'';document.getElementById('adminEmail2').textContent=user.email||'—';document.getElementById('adminRole').textContent=role;document.getElementById('adminRole2').textContent=role;document.getElementById('dashMembers').textContent='0';document.getElementById('sideMembers').textContent='0';document.getElementById('publicMembers').textContent='0';showPage('admin')}
+async function logout(){if(db)await db.auth.signOut();showPage('home');toast('تم تسجيل الخروج.')}
+window.addEventListener('load',async()=>{if(db){const s=await db.auth.getSession();if(s.data.session)await loadAdmin()}});
+</script></body></html>
